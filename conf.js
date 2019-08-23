@@ -21,7 +21,7 @@ specs: ['spec.js'],
   onPrepare: function() {
    var AllureReporter = require('jasmine-allure-reporter');
    jasmine.getEnv().addReporter(new AllureReporter({
-     resultsDir: '/var/lib/jenkins/workspace/test1/allure-report'
+     resultsDir: '/var/lib/jenkins/workspace/test1/allure-results'
    }
                                                    }));
                     
