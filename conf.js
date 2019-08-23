@@ -7,7 +7,7 @@ specs: ['spec.js'],
           'moz:firefoxOptions': {
                args: [ "--headless" ]
                   }
-       },
+       };
               
 onPrepare: function(){
        var AllureReporter = require('workspace/allure results');
