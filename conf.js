@@ -13,6 +13,5 @@ onPrepare: function(){
       jasmine.getEnv().addReporter(new AllureReporter({
   resultDir: 'target/allure-results'
       }));
-}
 
 
