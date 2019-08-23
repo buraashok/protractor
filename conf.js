@@ -22,7 +22,7 @@ specs: ['spec.js'],
    var AllureReporter = require('jasmine-allure-reporter');
    jasmine.getEnv().addReporter(new AllureReporter({
      resultsDir: '/var/lib/jenkins/workspace/test1/allure-results'
-   }
+   
                                                    }));
                     
   //onPrepare: function() {
