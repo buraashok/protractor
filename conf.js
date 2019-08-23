@@ -7,14 +7,13 @@ specs: ['spec.js'],
           'moz:firefoxOptions': {
                args: [ "--headless" ]
                   }
-       };
+       }
               
 onPrepare: function(){
        var AllureReporter = require('workspace/allure results');
       jasmine.getEnv().addReporter(new AllureReporter({
   resultDir: 'target/allure-results'
       }))
-}
-      
+   
 
 
