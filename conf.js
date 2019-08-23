@@ -1,11 +1,8 @@
 //var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 exports.config = {
-//framework: 'jasmine',
+framework: 'jasmine',
  //framework: 'jasmine2',
- //onPrepare: function() {
-   //var AllureReporter = require('jasmine-allure-reporter');
-   //jasmine.getEnv().addReporter(new AllureReporter({
-     //resultsDir: 'allure-results'
+
 seleniumAddress: 'http://localhost:4444/wd/hub',
 specs: ['spec.js'],
 //capabilities: {
@@ -20,7 +17,13 @@ specs: ['spec.js'],
           'moz:firefoxOptions': {
                args: [ "--headless" ]
                   }
-                   }
+                   },
+  onPrepare: function() {
+   var AllureReporter = require('jasmine-allure-reporter');
+   jasmine.getEnv().addReporter(new AllureReporter({
+     resultsDir: '/var/lib/jenkins/workspace/test1/allure-report'
+   }
+                                                   }));
                     
   //onPrepare: function() {
     //  jasmine.getEnv().addReporter(
