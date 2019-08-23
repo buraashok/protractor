@@ -14,5 +14,5 @@ onPrepare: function(){
   resultDir: 'target/allure-results'
       }));
 }
-}
+
 
