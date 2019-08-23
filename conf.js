@@ -1,4 +1,4 @@
-var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+//var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 exports.config = {
 //framework: 'jasmine',
  //framework: 'jasmine2',
@@ -20,13 +20,13 @@ specs: ['spec.js'],
           'moz:firefoxOptions': {
                args: [ "--headless" ]
                   }
-                   },
+                   }
                     
-  onPrepare: function() {
-      jasmine.getEnv().addReporter(
-        new Jasmine2HtmlReporter({
-          savePath: 'target/screenshots'
-        })
-      );
-   }
+  //onPrepare: function() {
+    //  jasmine.getEnv().addReporter(
+      //  new Jasmine2HtmlReporter({
+        //  savePath: 'target/screenshots'
+        //})
+      //);
+  // }
 };
