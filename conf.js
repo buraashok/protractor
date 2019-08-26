@@ -9,7 +9,7 @@ specs: ['spec.js'],
                    }
                    },
 
-framework: 'jasmine',
+//framework: 'jasmine2',
 onPrepare: function() {
     var jasmineReporters = require('jasmine-reporters');
     jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
