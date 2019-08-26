@@ -11,7 +11,7 @@ it('Add', function() {
     //   todoList.get(2).element(by.css('input')).click();
       //           var completedAmount = element.all(by.css('.done-true'));
         //                      expect(completedAmount.count()).toEqual(2);
-                                });
+                                }
                                                           });
 
 
