@@ -7,4 +7,14 @@ specs: ['spec.js'],
                args: [ "--headless" ]
                   }
                    }
-                   };
+                   },
+
+framework: 'jasmine2',
+onPrepare: function() {
+    var jasmineReporters = require('jasmine-reporters');
+    jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+        consolidateAll: true,
+        savePath: 'testresults',
+        filePrefix: 'xmloutput'
+    }));
+}
