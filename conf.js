@@ -1,7 +1,5 @@
-
 exports.config = {
-
-seleniumAddress: 'http://localhost:4444/wd/hub',
+ seleniumAddress: 'http://18.212.163.27:4444/wd/hub',
 specs: ['spec.js'],
        capabilities: {
          browserName: 'firefox',
@@ -9,6 +7,4 @@ specs: ['spec.js'],
                args: [ "--headless" ]
                   }
                    }
-   
-                                                   }));
-                    
+                   };
