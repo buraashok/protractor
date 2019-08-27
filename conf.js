@@ -11,8 +11,30 @@
 
 
 
-var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+//var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
   
+
+//exports.config = {
+//seleniumAddress: 'http://3.82.99.119:4444/wd/hub',
+//specs: ['spec.js'],
+  //   capabilities: {
+    // browserName: 'firefox',
+    //'moz:firefoxOptions': {
+      // args: [ "--headless" ]
+        //}
+       //},
+
+  //onPrepare: function() {
+    //  jasmine.getEnv().addReporter(
+      //  new Jasmine2HtmlReporter({
+        //  savePath: 'target/screenshots'
+        //})
+      //);
+   //}
+//};
+
+
+var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 
 exports.config = {
 seleniumAddress: 'http://3.82.99.119:4444/wd/hub',
@@ -32,5 +54,3 @@ specs: ['spec.js'],
       );
    }
 };
-
-
