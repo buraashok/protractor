@@ -15,7 +15,7 @@ var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
   
 
 exports.config = {
-seleniumAddress: 'http://18.212.163.27:4444/wd/hub',
+seleniumAddress: 'http://3.82.99.119:4444/wd/hub',
 specs: ['spec.js'],
      capabilities: {
      browserName: 'firefox',
